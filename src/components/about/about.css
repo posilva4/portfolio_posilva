@@ -75,6 +75,37 @@
     margin: 2rem 0 2.6rem;
 }
 
+.about__personalInfo{
+    display: grid;    
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about__personalInfo h4{
+    color: var(--color-primary);
+    text-align: left;
+}
+
+.about__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.item{
+    display: flex;
+    font-weight: bold;
+    font-size: 0.95rem;    
+}
+
+.item small{
+    font-size: 0.95rem;    
+    display: flex;
+    text-align: center;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+
 /* ===================== Media Queries (tablets) ===================== */
 
 @media screen and (max-width: 1024px){
