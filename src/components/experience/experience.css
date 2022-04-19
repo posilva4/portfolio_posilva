@@ -34,6 +34,10 @@ transition: var(--transition);
     gap: 1rem;
 }
 
+.education__details-Desc{
+    margin-top: 8px;
+}
+
 .experience__details-icon{
     margin-top: 6px;
     color: var(--color-primary);

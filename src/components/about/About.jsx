@@ -1,22 +1,12 @@
 import React, { useEffect } from "react";
 import "./about.css";
-import lottie from "lottie-web";
-import space from "../../assets/lottieImage/space.json";
+
 import ME from "../../assets/Astraunauta.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: document.querySelector("#space"),
-      animationData: space,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-    });
-  }, []);
 
   return (
     <section id="about">
