@@ -85,5 +85,26 @@
     font-size: 0.79rem;
 }
 
+/* ===================== Media Queries (tablets) ===================== */
+
+@media screen and (max-width: 1024px){
+   .education__container{
+       grid-template-columns: 1fr;
+       gap: 1rem;
+    }
+    
+    .education{
+        height: auto;
+    }
+}
+
+/* ===================== Media Queries (mobiles) ===================== */
+
+@media screen and (max-width: 600px){
+    .education__container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+     }
+}
 
 
