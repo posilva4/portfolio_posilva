@@ -16,6 +16,7 @@
 .education:hover {
     background: transparent;    
     cursor: default;
+    background-color: var(--color-over);    
 }
 
 .education__head{

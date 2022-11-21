@@ -1,10 +1,17 @@
 import React from 'react'
 import './footer.css';
+import ME from "../../assets/footer.png";
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+
+    return (     
+      
+      <footer>
+        <img src={ME} className="image__footer"></img>
+      </footer>
+ 
+    
+    ) 
+} 
 
 export default Footer

@@ -2,11 +2,25 @@ import React, { useEffect } from "react";
 import "./about.css";
 
 import ME from "../../assets/Astraunauta.png";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import { SiCsharp } from "react-icons/si";
+import { FaSatellite } from "react-icons/fa";
+import { BiHomeHeart } from "react-icons/bi";
 
 const About = () => {
+
+  
+function getAge() 
+{
+    var today = new Date();
+    var birthDate = new Date("1986/11/13");
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+    {
+        age--;
+    }
+    return age;
+}
 
   return (
     <section id="about">
@@ -24,22 +38,23 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>7+ years working</small>
+              <SiCsharp className="about__icon" />
+              <h5>7+ years working</h5>
+              <small></small>
             </article>
 
             <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>100 Clients</small>
+              <FaSatellite className="about__icon" />
+              <h5>Technology Enthusiast</h5>
+              <small></small>
             </article>
 
             <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>10+ Complete</small>
+              <BiHomeHeart className="about__icon" />
+              <h5>Family & Friends</h5>
+              <small></small>
             </article>
+            
           </div>
           <div className="about__personalInfo">
             <h4>Personal Infos</h4>
@@ -51,13 +66,13 @@ const About = () => {
                 <div className="header">Last Name:</div><small>Silva</small>
               </div>
               <div className="item">
-                <div className="header">Age:</div><small>35</small>
+                <div className="header">Age:</div><small>{getAge()}</small>
               </div>
               <div className="item">
                 <div className="header">Nationality:</div><small>Portuguese</small>
               </div>
               <div className="item">
-                <div className="header">Languages:</div><small>Portuguese, English</small>
+                <div className="header">Languages:</div><small>Portuguese (Native), English</small>
               </div>
               <div className="item">
                 <div className="header">Email:</div><small>posilva4@gmail.com</small>
@@ -65,12 +80,11 @@ const About = () => {
             </div>
           </div>
           <p>
-            Em linguística, a noção de texto é ampla e ainda aberta a uma
-            definição mais precisa. Grosso modo, pode ser entendido como
-            manifestação linguística das ideias de um autor, que serão
-            interpretadas pelo leitor de acordo com seus conhecimentos
-            linguísticos e culturais. Seu tamanho é variável. “Conjunto de
-            palavras e frases articuladas, escritas sobre qualquer suporte”.[1]
+          I’m a nice, fun and friendly person, I love to share moments with my family and friends! I'm addicted to sports and technology.  I believe in a fair world and don't like injustice.
+I’m honest and punctual and love to work in a team because it gives me the opportunity to learn and also share my knowledge. 
+  I try to be organized and always plan ahead to make sure I manage my time well.
+             I'm a good listener and I love communicate. 
+              I am always up for new challenges, even when I don't fell comfortable. 
           </p>
 
           <a href="#contact" className="btn btn-primary">
@@ -81,5 +95,7 @@ const About = () => {
     </section>
   );
 };
+
+
 
 export default About;
