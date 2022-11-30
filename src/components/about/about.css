@@ -2,7 +2,10 @@
     width: 400px;
     height: 400px;     
 }
-
+.about__content p{
+    text-align: justify;
+    text-justify: inter-word;
+}
 .about__container{
     display: grid;
     grid-template-columns: 35% 50%;
